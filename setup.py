@@ -15,7 +15,6 @@ setup(
         # packages=['demo'],                 # 包
     python_requires='>=3',
     install_requires=[
-            'bs4',
             'beautifulsoup4',
             'certifi',
             'cffi',
