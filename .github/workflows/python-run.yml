@@ -15,6 +15,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        python3 -m pip install numpy
         python3 setup.py install
     - name: Run
       run: |
