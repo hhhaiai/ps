@@ -5,10 +5,12 @@ import pandas as pd
 import random
 import requests
 from bs4 import BeautifulSoup
+import xlsxwriter
 
 
 #  need :
 #  pip install openpyxl
+#  pip install xlsxwriter
 #  pip install selenium
 #  pip install pandas
 #  pip install beautifulsoup4
@@ -117,5 +119,5 @@ if __name__ == '__main__':
 
     print("df:", df)
 
-    # 指定路径生成xlsx文件
-    df.to_excel(output_tag + '.xlsx')
+    # 指定路径生成xlsx文件, xlsxwriter 能解决乱码写入问题 openpyxl.utils.exceptions.IllegalCharacterError
+    df.to_excel(output_tag + '.xlsx', engine='xlsxwriter')

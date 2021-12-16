@@ -16,6 +16,7 @@ jobs:
       run: |
         sudo chmod -R 777 /usr/lib/python3/dist-packages/
         python3 -m pip install requests
+        python3 -m pip install xlsxwriter
         python3 -m pip install bs4
         python3 -m pip install beautifulsoup4
         python3 -m pip install wheel

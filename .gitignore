@@ -31,3 +31,8 @@ __MACOSX
 .DS_Store
 
 venv
+*.xlsx
+*/~*
+*.egg-info
+dist/
+.idea/
