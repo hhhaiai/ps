@@ -15,8 +15,12 @@ setup(
         # packages=['demo'],                 # 包
     python_requires='>=3',
     install_requires=[
+            'urllib3',
+            'requests',
+            'six',
             'cython',
             'numpy',
+            'bs4',
             'beautifulsoup4',
             'certifi',
             'cffi',
@@ -26,15 +30,11 @@ setup(
             'pycparser',
             'pyOpenSSL',
             'python-dateutil',
-            'requests',
             'selenium',
-            'six',
             'sortedcontainers',
             'soupsieve',
-            'urllib3',
             'wsproto',
             'attrs',
-
         ],
 
     # 私有源依赖
