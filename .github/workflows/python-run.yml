@@ -15,15 +15,16 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo python3 -m pip install requests
-        sudo python3 -m pip install beautifulsoup4
-        sudo python3 -m pip install wheel
-        sudo python3 -m pip install numpy
-        sudo python3 -m pip install cython
-        sudo python3 -m pip install --no-binary pandas pandas
-        sudo python3 -m pip install pandas
-        sudo python3 -m pip install openpyxl
-        sudo python3 -m pip install selenium
+        sudo chmod -R 777 /usr/lib/python3/dist-packages/
+        python3 -m pip install requests
+        python3 -m pip install beautifulsoup4
+        python3 -m pip install wheel
+        python3 -m pip install numpy
+        python3 -m pip install cython
+        python3 -m pip install --no-binary pandas pandas
+        python3 -m pip install pandas
+        python3 -m pip install openpyxl
+        python3 -m pip install selenium
         echo "install =======================setup.py"
         sudo python3 setup.py install
     - name: Run
