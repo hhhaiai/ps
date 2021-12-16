@@ -19,7 +19,6 @@ setup(
             'beautifulsoup4',
             'certifi',
             'cffi',
-            'numpy',
             'openpyxl',
             'pandas',
             'progressbar',
