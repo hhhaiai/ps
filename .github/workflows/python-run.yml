@@ -26,7 +26,7 @@ jobs:
         python3 -m pip install openpyxl
         python3 -m pip install selenium
         echo "install =======================setup.py"
-        sudo python3 setup.py install
+        # sudo python3 setup.py install
     - name: Run
       run: |
         python3 getinfo_by_keywords.py
