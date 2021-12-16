@@ -115,5 +115,7 @@ if __name__ == '__main__':
     # 去重，按key_words顺序保留不重复值
     df = df.drop_duplicates(['pkg_name'])
 
+    print("df:", df)
+
     # 指定路径生成xlsx文件
     df.to_excel(output_tag + '.xlsx')
