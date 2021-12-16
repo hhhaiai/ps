@@ -15,8 +15,11 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python3 -m pip install numpy
-        python3 setup.py install
+        sudo python3 -m pip install numpy
+        sudo python3 -m pip install cython
+        sudo python3 -m pip install --no-binary pandas pandas
+        sudo python3 -m pip install pandas
+        sudo python3 setup.py install
     - name: Run
       run: |
         python3 getinfo_by_keywords.py

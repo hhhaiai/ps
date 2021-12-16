@@ -15,6 +15,7 @@ setup(
         # packages=['demo'],                 # 包
     python_requires='>=3',
     install_requires=[
+            'cython',
             'numpy',
             'beautifulsoup4',
             'certifi',
